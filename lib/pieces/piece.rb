@@ -1,4 +1,4 @@
-class ClassName
+class Piece
   def initialize(color, rank, file)
     color = color
     rank = rank
