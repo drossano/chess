@@ -13,11 +13,11 @@ class King < Piece
   end
 
   def move_right
-    @rank = move_perpendicular(@file, 1)
+    @file = move_perpendicular(@file, 1)
   end
 
   def move_left
-    @rank = move_perpendicular(@file, -1)
+    @file = move_perpendicular(@file, -1)
   end
 
   def move_up_left
