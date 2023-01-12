@@ -13,5 +13,35 @@ describe Bishop do
         expect(bishop.file).to eq(-4)
       end
     end
+    describe "#move_up_right" do
+      it "increases the rank by the specified amount" do
+        bishop.move_up_right(4)
+        expect(bishop.rank).to eq(4)
+      end
+      it "increases the file by the specified amount" do
+        bishop.move_up_right(4)
+        expect(bishop.file).to eq(4)
+      end
+    end
+    describe "#move_down_right" do
+      it "decreases the rank by the specified amount" do
+        bishop.move_down_right(4)
+        expect(bishop.rank).to eq(-4)
+      end
+      it "increases the file by the specified amount" do
+        bishop.move_down_right(4)
+        expect(bishop.file).to eq(4)
+      end
+    end
+    describe "#move_down_LEFt" do
+      it "decreases the rank by the specified amount" do
+        bishop.move_down_left(4)
+        expect(bishop.rank).to eq(-4)
+      end
+      it "increases the file by the specified amount" do
+        bishop.move_down_left(4)
+        expect(bishop.file).to eq(-4)
+      end
+    end
   end
 end 
